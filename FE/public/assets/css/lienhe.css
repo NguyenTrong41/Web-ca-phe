@@ -1,0 +1,221 @@
+.bread-crumb {
+    background-image: url(../img/background_brea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+.main-title-breadcrumb {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #c19977;
+    font-weight: bold;
+    line-height: initial;
+    width: 650px;
+    margin: 50px auto 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    font-size: 16px;
+    width: 690px;
+    display: inline-block;
+}
+.breadcrumb li {
+    display: inline;
+}
+.breadcrumb li > a {
+    color: #fff;
+}
+.breadcrumb li > a > span {
+    color: #fff;
+}
+.breadcrumb li span {
+    display: inline;
+    color: #fff;
+}
+.breadcrumb li .mr_lr {
+    padding: 0px 3px;
+    color: #fff;
+}
+.breadcrumb li span {
+    display: inline;
+    color: #fff;
+}
+.breadcrumb li .mr_lr svg {
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+}
+.breadcrumb li.active,
+.breadcrumb li strong {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+.breadcrumb li.active span,
+.breadcrumb li strong span {
+    color: #fff;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+.content-page {
+    min-height: 400px;
+}
+.layout-contact {
+    background: #fcf3ec;
+    padding: 60px 0;
+}
+.layout-contact .inner {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 10px;
+}
+.layout-contact .contact {
+    margin-bottom: 50px;
+}
+.layout-contact .contact h4 {
+    font-size: 24px;
+    color: #c19977;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.layout-contact .contact .time_work .item {
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.layout-contact .contact .time_work .item svg {
+    width: 14px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.layout-contact .contact .time_work .item svg path {
+    fill: #c19977;
+}
+.layout-contact .contact .time_work.clock .item {
+    padding-left: 0;
+}
+.layout-contact .contact .time_work .item span {
+    font-weight: bold;
+}
+.layout-contact .form-contact .title {
+    text-align: center;
+}
+.layout-contact .form-contact .title h2 {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: 'font-title';
+    font-size: 40px;
+}
+.layout-contact .form-contact .title h2:before {
+    background-image: url('../img/logo-title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    width: 116px;
+    height: 20px;
+    display: block;
+    margin: auto auto 5px;
+}
+.layout-contact .form-contact .title h2:after {
+    background-image: url('../img/bg-after-title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    width: 118px;
+    height: 23px;
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.layout-contact .form-contact .group_contact input {
+    padding: 5px 25px;
+    min-height: 45px;
+    border: 1px solid #c19977;
+    width: 100%;
+    margin-bottom: 45px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.layout-contact .form-contact .group_contact textarea {
+    padding: 10px 25px;
+    height: 105px;
+    margin-bottom: 35px;
+    border: 1px solid #c19977;
+    width: 100%;
+    margin-bottom: 45px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.layout-contact .form-contact .group_contact .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.layout-contact .form-contact .group_contact .row .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.layout-contact .form-contact .group_contact input {
+    padding: 5px 25px;
+    min-height: 45px;
+    border: 1px solid #c19977;
+    width: 100%;
+    margin-bottom: 45px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.text-center {
+    text-align: center;
+}
+.layout-contact .form-contact .group_contact .btn-lienhe {
+    border: 1px solid #c19977;
+    color: #c19977;
+    height: 42px;
+    width: 210px;
+    font-size: 22px;
+    padding: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    background: initial;
+    text-transform: uppercase;
+}
+#contact_map {
+    height: 450px;
+}
+#contact_map iframe {
+    width: 100%;
+    height: 450px;
+}

@@ -1,0 +1,87 @@
+.bread-crumb {
+    background-image: url(../img/background_brea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+.main-title-breadcrumb {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #c19977;
+    font-weight: bold;
+    line-height: initial;
+    width: 650px;
+    margin: 50px auto 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    font-size: 16px;
+    width: 690px;
+    display: inline-block;
+}
+.breadcrumb li {
+    display: inline;
+}
+.breadcrumb li > a {
+    color: #fff;
+}
+.breadcrumb li > a > span {
+    color: #fff;
+}
+.breadcrumb li span {
+    display: inline;
+    color: #fff;
+}
+.breadcrumb li .mr_lr {
+    padding: 0px 3px;
+    color: #fff;
+}
+.breadcrumb li span {
+    display: inline;
+    color: #fff;
+}
+.breadcrumb li .mr_lr svg {
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+}
+.breadcrumb li.active,
+.breadcrumb li strong {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+.breadcrumb li.active span,
+.breadcrumb li strong span {
+    color: #fff;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+.content-page {
+    min-height: 400px;
+}
