@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation, Navigate } from 'react-router-dom'
 import requestApi from '../../../helpers/api'
-const Header = (props) => {
-    const[keyword, setKeyword] = useState(props.key);
+
+const Header = () => {
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const navigate = useNavigate();
+    const[keyword, setKeyword] = useState();
     const [expanded, setExpanded] = useState(true);
     //bat du lieu tu input
     const onChange = (event) =>{
@@ -10,9 +14,14 @@ const Header = (props) => {
         setKeyword(target.value);
         
     }
-    
+    const handlSearch = (keyword) =>
+    {
+        searchParams.set("keyword",keyword);
+        navigate({search: searchParams.toString()});
+    }
+    console.log(keyword)
     const onSubmit = () => {
-        // props.handlSearch(keyword)
+        handlSearch(keyword);
 
     }
   return (

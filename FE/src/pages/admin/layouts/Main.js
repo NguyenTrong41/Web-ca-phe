@@ -2,11 +2,12 @@ import React from 'react'
 import Header from './Header.js'
 import Sidebar from './Sidebar.js'
 import {Outlet} from 'react-router-dom'
+import Dashboard from '../components/Dashboard.js'
 const Main = () => {
   return (
-    <div>
+    <div >
         <Header/>
-        <div id="layoutSidenav">
+        <div id="layoutSidenav"> 
             <Sidebar/>
             <Outlet/>
         </div>

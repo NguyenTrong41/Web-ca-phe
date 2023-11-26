@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-const header = () => {
-    const navigate = useNavigate()
+const Header = () => {
+    const navigate = useNavigate();
     const onHandleLogout = ( ) =>{
         localStorage.removeItem('access_token');
-        navigate("admin.login")
+        navigate("/admin/login")
     }
   return (
     <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -35,4 +35,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header

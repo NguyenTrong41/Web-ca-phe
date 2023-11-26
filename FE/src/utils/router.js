@@ -4,5 +4,8 @@ export const ROUTERS = {
         MENU: "/menu",
         HOT: "/hot",
     },
-    
+    // ADMIN:{
+    //     HOME: '/admin',
+    //     LOGIN: '/admin/login',
+    // }
 }

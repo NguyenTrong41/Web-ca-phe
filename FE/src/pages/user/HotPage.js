@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import requestApi from './../../helpers/api'
+import { useLocation } from 'react-router-dom';
 // import {useDispatch} from 'react-redux'
 
 
-export const HotPage = (props) => {
-    const {keyword} = props;
+export const HotPage = () => {
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
     // const dispath = useDispatch();
     
     const[drinkData, setDrinkData] = useState();
@@ -21,9 +23,9 @@ export const HotPage = (props) => {
     //     }
     //     useEffect(keyword);
     // }
-    useEffect((keyword)=>{
-        // let query = `?keyword=${keyword}`;
-        let query = `?keyword=LATTE`;
+    useEffect(()=>{
+        let query = `?${searchParams?.toString()}`;
+        // let query = `?keyword=LATTE`;
         // requestApi( `drink`, 'GET', []).then( (response) => {
         requestApi( `drink${query}`, 'GET', []).then( (response) => {
 
@@ -32,12 +34,13 @@ export const HotPage = (props) => {
         }).catch(err => {
             console.log(err);
         })
-    },[keyword])
+    },[])
+    console.log(searchParams?.toString())
     console.log(drinkData)
 
-    const sort = (sortBy, sortValue) =>{
-        console.log(sortBy, ':', sortValue);
-    }
+    // const sort = (sortBy, sortValue) =>{
+    //     console.log(sortBy, ':', sortValue);
+    // }
 
     const renderProduct =() =>{
         if(isDrinkData)

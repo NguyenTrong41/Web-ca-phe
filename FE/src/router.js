@@ -5,7 +5,6 @@ import Main from './pages/user/layouts/Main'
 import MenuPage from './pages/user/MenuPage'
 import { HotPage } from './pages/user/HotPage'
 
-
 const userRouter = () => {
     const userRouters = [{
         path: ROUTERS.USER.HOME,
@@ -34,6 +33,7 @@ const userRouter = () => {
 const RouterCustom = ()=>{
     return userRouter();
 };
+
 export default RouterCustom;
 
 
